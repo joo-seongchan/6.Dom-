@@ -26,11 +26,20 @@
         //     //=>body내부에 있는 클래스, 아이디, 태그, 자식, 자손, 구조선택자등을 선택할 수 있음
         //     // =>여러(같은클래스명) 클래스일경우 첫번째 태그만 선택함
         //    console.log(boxEl)
+
+        // const boxEl_2 = document.querySelector('.box:nth-child(2)') 
+        // console.log(boxEl_2)
+
+        const boxAll = document.querySelectorAll('.box')
+        console.log(boxAll)
+        =>여러 클래스를 선택해올 수 있음
+        =>단, 선택할때 배열 형태로 반환 시켜줌
+        =>원하는 선택자를 선택하고 싶을땐 배열 형식으로 선택해 주면됨
         
-        const boxEl_2 = document.querySelector('.box:nth-child(2)') 
-        console.log(boxEl_2)
+        console.log(boxAll[2])
+        
 
-
+        
 
 
     </script>
