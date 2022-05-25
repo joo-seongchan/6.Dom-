@@ -19,14 +19,14 @@
         // =>4개의 선택자 한테 data-id 값을 추가 하기
         
         const boxEl = document.querySelectorAll('.box')
-        console.log(boxEl)
 
-        for(i = boxEl.length-1 ; i>=0; i++){
-            boxEl[i].setAttribute('data-',(i+1))
+        for(i = 1 ; i <= boxEl.length; i++){
+          boxEl[i-1].setAttribute('data-id', i)
         }
-        
-        console.log(boxEl)
+        // console.log(sc)
 
+        const boxEl_1 = boxEl.getAttribut('data-id')
+        console.log(boxEl_1)
     </script>
 
 
